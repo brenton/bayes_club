@@ -1,0 +1,5 @@
+FROM quay.io/jupyter/r-notebook
+
+ADD rethinking_install.R /home/jovyan
+
+RUN Rscript /home/jovyan/rethinking_install.R
